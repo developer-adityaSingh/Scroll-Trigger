@@ -21,7 +21,7 @@ body{
 
 .container{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     gap: 55px;
@@ -65,10 +65,22 @@ body{
 
 @media only screen and (max-width:650px){
     .card{
-        width: 200px;
+        width: 250px;
     }
 
-    .card:last-child{
-        margin-bottom: 100px;
+    .card:nth-child(odd){
+        margin-left: 70px;
+    }
+
+    @keyframes slideIn{
+        from{
+            opacity: 0;
+            transform: translateX(-70px);
+        }
+    
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
     }
 }
