@@ -12,7 +12,6 @@ body{
 }
 
 .message{
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -71,9 +70,5 @@ body{
 
     .card:last-child{
         margin-bottom: 100px;
-    }
-
-    .card:nth-child(odd){
-        margin-left: 100px;
     }
 }
